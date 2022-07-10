@@ -6,6 +6,7 @@ The website I am scraping for art, as this was a quick project for art data coll
 
 I went with nested conc and such at first but found that concurrently did the job perfect.
 
+I can utilize query params, in the future, on each pull to grab diff resolutions if you want to on this part of the pipeline as it would increase speed and have to be done for the AI. 
 
 ./run.sh "salvador-dali"
 
