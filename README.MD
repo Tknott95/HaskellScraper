@@ -8,13 +8,15 @@ I went with nested conc and such at first but found that concurrently did the jo
 
 I can utilize query params, in the future, on each pull to grab diff resolutions if you want to on this part of the pipeline as it would increase speed and have to be done for the AI. 
 
-./run.sh "salvador-dali"
+`./run.sh "salvador-dali"`
 
-./run.sh "michelangelo"
+`./run.sh "michelangelo"`
 
-./run.sh "m-c-escher"
+`./run.sh "m-c-escher"`
 
-stack install http-conduit conduit resourcet async regex-posix
-
-stack ghc colors.hs dl.hs main.hs && rm -f *.hi && rm -f *.o && ./main $1 -RTS 8 -rtsopts +RTS -s -ol main.eventlog
-
+``` install packages with stack.
+  stack install http-conduit conduit resourcet async regex-posix
+```
+``` just use the ./run.sh <artist-name> script
+  stack ghc colors.hs dl.hs main.hs && rm -f *.hi && rm -f *.o && ./main $1 -RTS 8 -rtsopts +RTS -s -ol main.eventlog
+```
