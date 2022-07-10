@@ -1,7 +1,7 @@
 
-ghc dl.hs main.hs $HX && ./main "salvador-dali"
-ghc dl.hs main.hs  $HX && ./main "michelangelo"
-
+./run.sh "salvador-dali"
+./run.sh "michelangelo"
+./run.sh "m-c-escher"
 
 stack install http-conduit conduit resourcet async regex-posix
 
