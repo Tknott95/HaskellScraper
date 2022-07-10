@@ -3,6 +3,9 @@ concurrent art scraper for archiving purposes or data collection - this was just
 The website I am scraping for art, as this was a quick project for art data collection, throws some links up as (1). It is faster to concurrently scrape (1) rather than to run conditions. 
 
 
+I went with nested conc and such at first but found that concurrently did the job perfect.
+
+
 ./run.sh "salvador-dali"
 
 ./run.sh "michelangelo"
