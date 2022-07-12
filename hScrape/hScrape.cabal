@@ -32,11 +32,13 @@ executable hScrape
     build-depends:    http-conduit,
                       directory,
                       bytestring,
-                      
+
                       conduit,
                       resourcet, 
                       async,
                       regex-posix,
                       base ^>=4.15.1.0
-    hs-source-dirs:   app
+    
+    ghc-options: +RTS -N -RTS -threaded
+    hs-source-dirs:   app, app/libs
     default-language: Haskell2010
