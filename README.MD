@@ -19,6 +19,7 @@ I can utilize query params, in the future, on each pull to grab diff resolutions
 
 
 **STACK**
+ ./install.sh
 
 `./run.sh "salvador-dali"`
 
