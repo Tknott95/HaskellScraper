@@ -8,7 +8,7 @@ I went with nested conc and such at first but found that concurrently did the jo
 
 I can utilize query params, in the future, on each pull to grab diff resolutions if you want to on this part of the pipeline as it would increase speed and have to be done for the AI. 
 
- ** CABAL **
+ **CABAL**
 `cabal run hScrape "salvador-dali"`
 
 `cabal run hScrape "michelangelo"`
@@ -16,7 +16,7 @@ I can utilize query params, in the future, on each pull to grab diff resolutions
 `cabal run hScrape "m-c-escher"`
 
 
-** STACK **
+**STACK**
 `./run.sh "salvador-dali"`
 
 `./run.sh "michelangelo"`
