@@ -22,4 +22,4 @@ I can utilize query params, in the future, on each pull to grab diff resolutions
   stack ghc colors.hs dl.hs main.hs && rm -f *.hi && rm -f *.o && ./main $1 -RTS 8 -rtsopts +RTS -s -ol main.eventlog
 ```
 
-##### CODE WILL BE CLEANED AT A LATER DATE - THIS WASN"T GOING TO BE OPEN SOURCED
+##### CODE WILL BE CLEANED AT A LATER DATE - THIS WASNT GOING TO BE OPEN SOURCED
