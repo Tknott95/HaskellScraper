@@ -8,7 +8,11 @@ I went with nested conc and such at first but found that concurrently did the jo
 
 I can utilize query params, in the future, on each pull to grab diff resolutions if you want to on this part of the pipeline as it would increase speed and have to be done for the AI. 
 
- **CABAL**
+
+@TODO
+ - use mapConcurrently to batch dynamically and use what cores allow instead of static batching and threading
+ 
+**CABAL**
  
 `cabal run hScrape "salvador-dali"`
 
