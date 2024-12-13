@@ -1,5 +1,8 @@
 Concurrent art scraper for archiving purposes or data collection - this was just a quick project to extend on top of an ai
 
+-- STATIC BATCHING AND CORES - UGLY REGEX - NEEDS A TINY REFACTOR - WAS QUICK AND DIRTY FOR SCRAPING
+-- This needs to check how many cores then batch dynamically instead of using static batching as well as mapConcurrently. This was a aquick and dirty build and def needs a refactor. 
+
 The website I am scraping for art, as this was a quick project for art data collection, throws some links up as (1). It is faster to concurrently scrape (1) rather than to run conditions. 
 
 This can handle HTTPS as well.
