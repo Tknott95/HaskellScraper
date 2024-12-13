@@ -17,6 +17,10 @@ import qualified Data.ByteString as B
 import qualified Data.ByteString.Char8 as BC
 import Text.Regex.Posix
 
+-- STATIC BATCHING AND CORES - UGLY REGEX - NEEDS A TINY REFACTOR - WAS QUICK AND DIRTY FOR SCRAPING
+-- This needs to check how many cores then batch dynamically instead of using static batching as well as mapConcurrently. This was a aquick and dirty build and def needs a refactor. 
+
+
 openURL :: String -> IO LB.ByteString
 openURL x = simpleHttp x
 
