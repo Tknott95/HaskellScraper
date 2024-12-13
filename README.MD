@@ -8,6 +8,8 @@ I went with nested conc and such at first but found that concurrently did the jo
 
 I can utilize query params, in the future, on each pull to grab diff resolutions if you want to on this part of the pipeline as it would increase speed and have to be done for the AI. 
 
+This needs to check how many cores then batch dynamically instead of using static batching as well as mapConcurrently. This was a aquick and dirty build and def needs a refactor. 
+
 
 @TODO
  - use mapConcurrently to batch dynamically and use what cores allow instead of static batching and threading
